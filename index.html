@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>LOL</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+      margin-top: 30px;
+      background-color: #fae5df;
+    }
+    img{
+      object-fit:cover;
+      height: 300px;
+      width: 400px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    input{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      height: 50px;
+      width:50vw;
+      text-align: center;
+      font-size: 2rem;
+      margin: 5px;
+    }
+    button{
+      margin: 5px;
+      height:50px; 
+      width: 50px;
+      background-color: #ed7966;
+      border-radius: 20%;
+      color:white;
+
+    }
+    #body{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #body>div{
+      overflow: hidden;
+      flex: 1 1 380px;
+      height: auto;
+      background-color: #303179;
+      margin:20px;
+      padding:10px;
+      color:white;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    @media (max-width:500px){
+      img{
+        height: 90%;
+        width: 90%;
+      }
+      input{
+        width:70vw;
+        height:40px;
+        font-size: 1.2rem;
+      }
+      button{
+        height:40px;
+        width: 40px;
+      }
+      #body>div{
+        flex:1 1 150px;
+        max-width: 200px;
+        margin:8px;
+        padding:12px;
+      }
+      #body>div>div:nth-child(1){
+        padding: 0;
+        margin: 0;
+      }
+      .name{
+        font-size: 16px;
+      }
+      .type{
+        font-size: 14px;
+      }
+      .desc{
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="display:flex;flex-direction: row;">
+    <input type='text' id='search' name='search-box' placeholder="Search">
+    <button type='submit' onclick="submitButton()"><i class="fa fa-search"></i></button>
+  </div>
+  <div id="body">
+  </div>
+  <script src ="script.js"></script>
+</body>
+</html>
