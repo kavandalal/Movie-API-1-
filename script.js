@@ -1,28 +1,4 @@
 const fetchData = (name) => {
-//   var i = document.getElementById("bod");
-//   i = fetch('https://api.github.com/users')
-//     .then(response => {
-//       return response.json();
-//     })
-//     .then(data => {
-//       // console.log(data);
-//       const html = data.map(
-//         user => {
-//           return `
-//           <div>
-//           <a href="${user.html_url}"><img src ="${user.avatar_url}" /></a>
-//           <p>Name : ${user.login}</p>
-//           </div>
-//           `;
-//         }).join('');
-//       // console.log(html);
-//       document.querySelector('#body').insertAdjacentHTML('beforeend', html);
-//     })
-//     .catch(err => {
-//       console.error(err)
-//     })
-// }
-  
   var i = {};
   i = fetch(
     `https://imdb8.p.rapidapi.com/auto-complete?q=${name}`, {
